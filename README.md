@@ -18,3 +18,7 @@ LSM Tree（Log Structured Merge Tree，日志结构合并树）其实并不是�
 
 
 和 B+ 树不同，在 LSM 中，数据的插入、更新、删除都会被记录成一条日志，然后追加写入到磁盘文件当中，这样所有的操作都是顺序 IO，因此 LSM 比较适用于写多读少的场景。
+
+##  Bitcask api  
+
+![img_2.png](img_2.png)
